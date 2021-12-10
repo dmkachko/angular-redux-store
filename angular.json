@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "angular-redux-store": {
+      "projectType": "library",
+      "root": "projects/angular-redux-store",
+      "sourceRoot": "projects/angular-redux-store/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/angular-redux-store/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angular-redux-store/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/angular-redux-store/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-redux-store/src/test.ts",
+            "tsConfig": "projects/angular-redux-store/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-redux-store/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "angular-redux-store"
 }
