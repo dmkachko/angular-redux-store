@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-redux-store": {
+    "@dkachko/angular-redux-store": {
       "projectType": "library",
       "root": "projects/angular-redux-store",
       "sourceRoot": "projects/angular-redux-store/src",
@@ -35,5 +35,5 @@
       }
     }
   },
-  "defaultProject": "angular-redux-store"
+  "defaultProject": "@dkachko/angular-redux-store"
 }
