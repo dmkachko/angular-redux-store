@@ -1,7 +1,7 @@
 import { ApplicationRef, Injectable, NgZone } from '@angular/core';
 import { AnyAction, StoreEnhancer, Unsubscribe } from 'redux';
-import { EnhancerOptions } from 'redux-devtools-extension';
 import { NgRedux } from './ng-redux';
+import { EnhancerOptions } from 'redux-devtools-extension';
 
 export interface ReduxDevTools {
   (options: EnhancerOptions): StoreEnhancer<any>;

@@ -1,6 +1,6 @@
 {
   "name": "dmkachko-angular-redux",
-  "version": "14.2.1",
+  "version": "14.2.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -15,9 +15,9 @@
     "@angular/core": "^14.2.5",
     "redux": "^4.2.0",
     "rxjs": "^7.5.7",
-    "@redux-devtools/extension": "^3.2"
+    "redux-devtools-extension": "^2.13"
   },
-  "devDependencies": {
+  "devDependencies": {rii
     "tslib": "^2.4.0",
     "zone.js": "^0.11.8",
     "@angular-devkit/build-angular": "^14.2.5",

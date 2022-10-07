@@ -28,7 +28,7 @@ import {
 import { SubStore } from './sub-store';
 
 /** @hidden */
-export class RootStore<RootState> extends NgRedux<RootState> {
+export class RootStore<RootState extends StoreEnhancer<Store<RootState, AnyAction>, unknown> | undefined> extends NgRedux<RootState> {
   private store: Store<RootState> | undefined = undefined;
   private store$: BehaviorSubject<RootState>;
 
@@ -88,6 +88,7 @@ export class RootStore<RootState> extends NgRedux<RootState> {
     }
   };
 
+  // @ts-ignore
   [Symbol.observable] : () => ObservableRedux<RootState>;
 
   select = <SelectedType>(
