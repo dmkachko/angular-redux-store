@@ -3,8 +3,7 @@ import { DevToolsExtension } from './components/dev-tools';
 import { NgRedux } from './components/ng-redux';
 import { RootStore } from './components/root-store';
 
-/** @hidden */
-export function _ngReduxFactory(ngZone: NgZone) {
+function _ngReduxFactory(ngZone: NgZone) {
   return new RootStore(ngZone);
 }
 

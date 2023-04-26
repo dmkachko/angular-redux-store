@@ -1,6 +1,6 @@
 {
   "name": "@dkachko/angular-redux-store",
-  "version": "15.0.0",
+  "version": "15.0.2",
   "description": "Angular bindings for Redux",
   "author": "William Buchwalter <wbuchwalter@gmail.com> (http://github.com/wbuchwalter)",
   "license": "MIT",
